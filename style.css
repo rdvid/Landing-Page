@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.allContent{
+    padding: 0 20px;
+}
+
+#firstCard{
+    background-color: #1F2937;
+}
+
+h1{
+    font-size: 48px;
+    font: bolder;
+    color: #F9FAF8;
+}
+
+h4{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+#navBar{
+    background-color: #1F2937;
+    display: flex;
+    color: #e5e7eb;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-style: bold;
+}
+
+.navBarButton{
+    margin: 0 10px;
+}
+
+.navBarButton{
+    background-color: #1F2937;
+    color: #e5e7eb;
+    float: inline-end;
+}
