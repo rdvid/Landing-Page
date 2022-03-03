@@ -4,35 +4,54 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <title>Home</title>
     </head>
     <body>
-        <div class="allContent">
-            <div id="navBar">
-                <h3> Header Logo</h3>
-                <div id="barButtons">
-                    <button class="navBarButton">Header link One</button>
-                    <button class="navBarButton">Header link Two</button>
-                    <button class="navBarButton">Header link Three</button>
-                </div>
-            </div>
-
-            <div id="firstCard">  
-                <h1> This Website is awesome </h1>
-                <h4> This website have some subtext who keeps below the hero text </h4>
-                <button>Sign Up</button>
-                <img src="based.jpeg" alt="CEO of based department">
+        <div id="navBar">
+            <div id="headerLogoText"><h3>Header Logo</h3></div>
+            <div id="barButtons">
+                <button class="navBarButton">Header link One</button>
+                <button class="navBarButton">Header link Two</button>
+                <button class="navBarButton">Header link Three</button>
             </div>
         </div>
 
+        <div id="firstCardContent">
+            <div id="firstCard">  
+                <h1 id="mainTitle"> This website is based </h1>
+                <h4 id="mainSubtitle"> This website have some subtext who keeps below the hero text.<br> It's a smaller font and the text gets less contrast color. </h4>
+                <button id="signUpButton">Sign Up</button>
+            </div>
 
+            <div id="imageCard"><img src="based.jpeg" alt="CEO of based department"></div>
+        </div>
 
+        <div id="randomInfoCard">
 
+            <h2 id="secondTitle">Some random information.</h2>
 
+            <div class="infoSlots">
+                <ul id="slotList">
+                    <li class="slotListItem"><div class="emptySquare"></div><p>This is a subtext info</p></li>
+                    <li class="slotListItem"><div class="emptySquare"></div><p>This is a subtext info</p></li>
+                    <li class="slotListItem"><div class="emptySquare"></div><p>This is a subtext info</p></li>
+                    <li class="slotListItem"><div class="emptySquare"></div><p>This is a subtext info</p></li>
+                </ul>
+                
+            </div>
 
+        </div>
 
+        <div id="quoteCard">
+            <div id="goodQuote">
+                <p> “Hard work betrays none, but dreams betray many. working hard alone doesn't assure<br> you that you'll achieve your dreams. actually there are more cases where you don't.<br> even so, working hard and achieving something is some consolation at least.”<br><br></p> 
+                <p> Hikigaya Hachiman </p>
+            </div>
+        </div>
+
+    
 
 
     </body>
