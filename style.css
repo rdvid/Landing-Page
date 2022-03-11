@@ -87,19 +87,23 @@
     background-color: rgb(32, 102, 194);
     color: #F9FAF8;
     height: 40px;                   
-    width: 80px;    
-    font-style: bold;               
+    width: 80px;            
     border-radius: 8px;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 
 /* sets the animation of the Sign Up button */
 
-
 #signUpButton:hover{
-    cursor: pointer;        
     opacity: 1;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#signUpButton:active{
+    background-color: rgb(32, 102, 194);
+    transform: translateY(4px);
 }
 
 
@@ -137,7 +141,7 @@ img{
 }
 
 
-/* that settings is about the list of info Squareslots */
+/* settings for the list of info Squareslots */
 
 
 #slotList{  
@@ -154,10 +158,81 @@ img{
 
 #quoteCard{
     background-color: #E5E7EB;
-    font-style: italic;
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #goodQuote{
     margin: 80px 0;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+
+#actionCard{
+    background-color: #F9FAF8;
+    height: 260px;
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
+
+
+#blueCard{
+    display: flex;
+    justify-content: space-between;
+    color: #F9FAF8;
+    background-color: rgb(44, 118, 214);
+    padding: 60px 100px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+#blueCardButton{
+    background-color:rgb(44, 118, 214);
+    color: #F9FAF8;
+    font-weight: 800;
+    border: 2px solid #F9FAF8;
+    border-radius: 8px;
+    margin-left: 100px;
+    padding: 0 40px;
+}
+
+
+#blueCardButton:hover{
+    cursor: pointer;
+}
+
+
+
+#blueCardButton:active{
+    transform: translateY(4px);
+}
+
+
+#blueCardSubtitle{
+    color: #F9FAF8;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+footer{
+    background-color: #1F2937;
+    text-align: center;
+    padding: 20px;
+    color: #F9FAF8;
+}
+
+a{
+    font-style: none;
+    color: aqua;
+}
+
