@@ -5,49 +5,46 @@
 }
 
 
-
+@keyframes background-change{
+    0%{ background-image: url(./images/Jhin_0.jpg);}
+    25% { background-image: url(./images/Jhin_1.jpg);}
+    50% { background-image: url(./images/Jhin_2.jpg);}
+    75% { background-image: url(./images/Jhin_3.jpg);}
+    100% { background-image: url(./images/Jhin_4.jpg);}
+}
 
 
 #navBar{
-    background-color: #1F2937;
+    background-color: #000000;
     display: flex;
-    color: #F9FAF8; 
     width: 100%;
-    justify-content: space-around;
-    padding: 30px 0;
+    justify-content: space-between;
     font-weight: 800;
-    font-size: 24px;
+    margin: 0;
 }
-
-
-
-
-
-.navBarButton{
-    background-color: #1F2937;
-    color: #F9FAF8;
-    float: inline-end;
-    margin: 0 10px;
-}
-
-
-
 
 
 .navBarButton:hover{
     cursor: pointer;
+    opacity: 1;
 }
 
+
+#barButtons{
+    align-self: center;
+}
 
 
 
 
 #firstCardContent{
-    display: flex;
-    background-color: #1F2937;
+    background-image: url("/images/Jhin_0.jpg");
+    animation: background-change 5s infinite;
     justify-content: space-between;
-    padding: 80px 0 80px 150px;
+    padding: 0 0 80px 150px;
     flex: 1;
+    height: 100vh;
+    position: sticky;
 }
 
 
@@ -66,7 +63,8 @@
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
-    margin-bottom: 10px;
+    margin: 0;
+    padding-top: 20px;
 }
 
 
@@ -107,15 +105,11 @@
 }
 
 
-/* define the form, widht and border of an image */
+/* random info section */
 
 
-img{
-    border-radius: 10px;
-    margin-right: 150px;
-    margin-left: 40px;            
-    border: 4px solid black;
-    border-radius: 10px;
+#randomInfoCard{
+    padding: 0 40px;
 }
 
 
@@ -129,32 +123,32 @@ img{
 
 
 
-/* sets the border of all slots */
-
-
-.emptySquare{
-    border: 4px solid rgb(32, 102, 194);;   
-    border-radius: 8px;
-    height: 140px;
-    width: 140px;
-    margin: 30px 0 10px 0;
-}
-
-
-/* settings for the list of info Squareslots */
-
-
 #slotList{  
     list-style: none;   
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     color: #1F2937;
     margin: 40px 0 80px 0;
+    padding: 0;
+}
+
+.img-fluid{
+    border: solid 4px #000000;
+    border-radius: 20px;
 }
 
 .slotListItem{
     margin: 0 35px 40px 0;
 }
+
+.subtitleText{
+    text-align: center;
+}
+
+
+
+
+/* quote section */
 
 #quoteCard{
     background-color: #E5E7EB;
