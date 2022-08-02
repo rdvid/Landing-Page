@@ -1,173 +1,228 @@
+
 *{
+    padding: 0;
     margin: 0;
     border: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-
+/* carousel background animation */
 @keyframes background-change{
-    0%{ background-image: url(./images/Jhin_0.jpg);}
-    25% { background-image: url(./images/Jhin_1.jpg);}
-    50% { background-image: url(./images/Jhin_2.jpg);}
-    75% { background-image: url(./images/Jhin_3.jpg);}
-    100% { background-image: url(./images/Jhin_4.jpg);}
+    10% , 100%{ background-image: url(./images/Jhin_0.jpg);}
+    30% { background-image: url(./images/Jhin_1.jpg);}
+    55% { background-image: url(./images/Jhin_2.jpg);}
+    75% { background-image: url(./images/Jhin_4.jpg);}
 }
 
+@keyframes background-mobile-change{
+    10% , 100%{ background-image: url(./mobileimages/Jhin_0.jpg);}
+    29% { background-image: url(./mobileimages/Jhin_1.jpg);}
+    52% { background-image: url(./mobileimages/Jhin_2.jpg);}
+    78% { background-image: url(./mobileimages/Jhin_4.jpg);}
+}
 
 #navBar{
-    background-color: #000000;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: 800;
     margin: 0;
+    padding: 0;
 }
 
-
-.navBarButton:hover{
-    cursor: pointer;
+#riotLogo{
+    margin-top: 10px;
     opacity: 1;
 }
 
-
-#barButtons{
-    align-self: center;
+.btn{
+    background-color: #000000;
+    border-color: #000000;
+    border-radius: 1.25rem;
 }
 
+.btn:hover{
+    background-color: #e51620;
+    transition: 0.8s;
+}
+
+#firstCard{
+    background-image: url("/images/Jhin_0.jpg");
+    animation: background-change 20s infinite;
+    background-size: cover;
+    justify-content: space-between;
+    height: 100vh;
+    text-shadow:
+    -2px   -2px black,
+    -2px -1.5px black,
+    -2px   -1px black,
+    -2px -0.5px black,
+    -2px    0px black,
+    -2px  0.5px black,
+    -2px    1px black,
+    -2px  1.5px black,
+    -2px    2px black,
+    -1.5px  2px black,
+    -1px    2px black,
+    -0.5px  2px black,
+    0px     2px black,
+    0.5px   2px black,
+    1px     2px black,
+    1.5px   2px black,
+    2px     2px black,
+    2px   1.5px black,
+    2px     1px black,
+    2px   0.5px black,
+    2px     0px black,
+    2px  -0.5px black,
+    2px    -1px black,
+    2px  -1.5px black,
+    2px    -2px black,
+    1.5px  -2px black,
+    1px    -2px black,
+    0.5px  -2px black,
+    0px    -2px black,
+    -0.5px -2px black,
+    -1px   -2px black,
+    -1.5px -2px black;
+}
+
+
+@media screen and (max-width: 800px) {
+    #firstCard{
+      background-image: url(./mobileimages/Jhin_0.jpg);
+      animation: background-mobile-change 15s infinite;
+      background-size: cover;
+      justify-content: space-between;
+      height: 100vmax;
+    }
+  }
 
 
 
 #firstCardContent{
-    background-image: url("/images/Jhin_0.jpg");
-    animation: background-change 5s infinite;
-    justify-content: space-between;
-    padding: 0 0 80px 150px;
-    flex: 1;
-    height: 100vh;
-    position: sticky;
+    padding: 0 0 0 10rem;
+    margin-top: 6rem;
 }
-
-
-
-
-
-#headerLogoText{
-   padding-left: 15px;
-}
-
-
-
 
 
 #mainTitle{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     color: #F9FAF8;
-    margin: 0;
-    padding-top: 20px;
 }
-
-
-
 
 
 #mainSubtitle{
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #E5E7EB;
 }
+
 
 
 /* set the appearance of the Sign Up button*/
 
 
 #signUpButton{
-    margin-top: 30px;
-    background-color: rgb(32, 102, 194);
+    margin-top: 2rem;
+    background-color: black;
     color: #F9FAF8;
-    height: 40px;                   
-    width: 80px;            
+    height: 2.5rem;                   
+    width: 5rem; 
+    border-color: #000000;           
     border-radius: 8px;
-    opacity: 0.5;
 }
 
 
 /* sets the animation of the Sign Up button */
 
 #signUpButton:hover{
-    opacity: 1;
     cursor: pointer;
-    opacity: 1;
+    background-color: #e51620;
+    transition: 0.6s;
 }
 
 #signUpButton:active{
-    background-color: rgb(32, 102, 194);
     transform: translateY(4px);
 }
 
 
 /* random info section */
 
-
 #randomInfoCard{
-    padding: 0 40px;
+    padding: 6rem;
 }
 
-
-#secondTitle{
+#randomInfoCardTitle{
     text-align: center;
-    font-size: 36px;
-    font-weight: 800;
-    margin-top: 60px;
-    color: #1F2937;
+    margin-bottom: 5rem;
+}
+
+.infoList{
+    display: flex;
+    flex-direction: row;
 }
 
 
-
-#slotList{  
-    list-style: none;   
+.infoSquare{
     display: flex;
-    justify-content: space-between;
-    color: #1F2937;
-    margin: 40px 0 80px 0;
-    padding: 0;
+    flex-direction: column;
+    height: 15rem;
+    width: 20rem;
+    margin: 0 1%;
 }
 
 .img-fluid{
-    border: solid 4px #000000;
+    border: black 4px solid;
     border-radius: 20px;
+    opacity: 0.5;
 }
 
-.slotListItem{
-    margin: 0 35px 40px 0;
-}
 
-.subtitleText{
+.infoSquareSubtitleText{
     text-align: center;
+    margin-top: 2.5rem;
+    opacity: 0;
 }
 
 
-
+.img-fluid:hover, .img-fluid:hover + .infoSquareSubtitleText{       
+    opacity: 1;
+    transition: 0.8s;       /* fade transition */
+    cursor: pointer;
+}
 
 /* quote section */
 
 #quoteCard{
-    background-color: #E5E7EB;
-    height: 360px;
+    background-image: url(./images/mask.jpg);
+    background-size: cover;
+    height: 70vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 14rem 0;
 }
 
 #goodQuote{
-    margin: 80px 0;
-    text-align: right;
-    font-size: 20px;
+    margin: 5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: 300;
+    color: #fff;
+    font-family: 'Josefin Slab', serif !important;
 }
 
 
+/*call to action*/
 
+#lastCard{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    border: #352e6f 2px solid;
+}
 
 #actionCard{
     background-color: #F9FAF8;
@@ -183,7 +238,7 @@
     display: flex;
     justify-content: space-between;
     color: #F9FAF8;
-    background-color: rgb(44, 118, 214);
+    background-color: #000;
     padding: 60px 100px;
     border-radius: 8px;
     font-size: 20px;
@@ -218,15 +273,18 @@
 }
 
 
+
+
+
+
 footer{
-    background-color: #1F2937;
+    background-color: #000000;
     text-align: center;
-    padding: 20px;
-    color: #F9FAF8;
-}
-
-a{
+    color: #ffffff;
     font-style: none;
-    color: aqua;
+    font-size: 0.8rem;
 }
 
+footer > p{
+    margin: 0;
+}
