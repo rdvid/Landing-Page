@@ -9,16 +9,40 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Josefin+Slab:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script defer src="./script.js"></script>
         <title>Home</title>
     </head>
 
 
+
+    
     <body>
         
+<!-- Button trigger modal -->
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Jhin</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Jhin
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
 
-
-
+        
         <article id="firstCard">
 
             <nav id="navBar" class="navbar navbar-expand-lg">
@@ -60,19 +84,19 @@
 
             <div class="infoList">
             
-                <div class="infoSquare">
+                <div class="infoSquare" type="button">
                     <img src="images/Jhin_1.jpg" class="img-fluid"alt="">
                     <p class="infoSquareSubtitleText">Jhin Old West</p>
                 </div>
-                <div class="infoSquare">
+                <div class="infoSquare" type="button">
                     <img src="images/Jhin_2.jpg" class="img-fluid"alt="">
                     <p class="infoSquareSubtitleText">Jhin Bloody Moon</p>
                 </div>
-                <div class="infoSquare">
+                <div class="infoSquare" type="button">
                     <img src="images/Jhin_4.jpg" class="img-fluid"alt="">
                     <p class="infoSquareSubtitleText">Project: Jhin</p>
                 </div>
-                <div class="infoSquare">
+                <div class="infoSquare" type="button">
                     <img src="images/Jhin_5.jpg" class="img-fluid"alt="">
                     <p class="infoSquareSubtitleText">Dark Cosmic Jhin</p>
                 </div>
@@ -90,17 +114,16 @@
         <article id="lastCard">
             <div id="actionCard">
                 <div id="blueCard">
-                    <div><h5>Call to action! It's time!!'</h5>
-                    <p id="blueCardSubtitle">Sign up to our product by clicking that button right over there!</p></div>
+                    <div><h5>Want to know more?</h5>
+                    <p id="blueCardSubtitle">Click in the button aside to read more about the story of this psychokiller mastermind</p></div>
                     
-                    <button id="blueCardButton"> Sign up</button>
+                    <button id="blueCardButton"> Hell Yeah</button>
                 </div>
             </div>
         </article>
 
         <footer>
             <p>© All rights reserved<br>Rafael David, Web Developer<br><a href="https://github.com/rdvid" target="_blank">@rdvid</a></p>
-            
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -151,6 +151,7 @@
 
 #randomInfoCard{
     padding: 6rem;
+    height: 80vh;
 }
 
 #randomInfoCardTitle{
@@ -181,6 +182,7 @@
 
 .infoSquareSubtitleText{
     text-align: center;
+    font-weight: bolder;
     margin-top: 2.5rem;
     opacity: 0;
 }
@@ -192,12 +194,18 @@
     cursor: pointer;
 }
 
+
+/* Info Modals */
+
+
+
+
 /* quote section */
 
 #quoteCard{
     background-image: url(./images/mask.jpg);
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -215,10 +223,10 @@
 }
 
 
-/*call to action*/
+/*Last Card */
 
 #lastCard{
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     border: #352e6f 2px solid;
@@ -275,7 +283,7 @@
 
 
 
-
+/* Footer */
 
 footer{
     background-color: #000000;
@@ -288,3 +296,4 @@ footer{
 footer > p{
     margin: 0;
 }
+
