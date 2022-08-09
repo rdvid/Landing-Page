@@ -8,7 +8,7 @@
 
 /* carousel background animation */
 @keyframes background-change{
-    10% , 100%{ background-image: url(./images/Jhin_0.jpg);}
+    0% , 100%{ background-image: url(./images/Jhin_0.jpg);}
     30% { background-image: url(./images/Jhin_1.jpg);}
     55% { background-image: url(./images/Jhin_2.jpg);}
     75% { background-image: url(./images/Jhin_4.jpg);}
