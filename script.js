@@ -1,10 +1,14 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
 
+    $(view).on("#quote", () => {
+        alert('teste');
+    });
 
-    $('.infoSquare').on('click', function(){
+    $('.infoSquare').on('click', function () {
         $('#exampleModal').modal();
     })
+
 
 
 });

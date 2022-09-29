@@ -1,2 +1,3 @@
-# Landing-Page
-a basic landing page project to apply my css knowledge
+# Landing-Page 
+
+Institucional landing-page-format website for PicknGo Delivery.
