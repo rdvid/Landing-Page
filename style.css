@@ -19,15 +19,26 @@ body {
 /* header */
 
 #navBar {
+    padding: 1%;
     width: 100vw;
     flex-direction: row;
     justify-content: center;
+    border: 2px solid #F1F1F1;
+    box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.1);
 }
 
 .navButton {
     margin: 0 2%;
     background-color: none;
     border: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+.navButton:hover {
+    background-color: #f1f1f1cc;
     color: black;
 }
 
@@ -36,12 +47,20 @@ body {
     position: relative;
     flex: 1;
     justify-content: end;
+    margin: 0 3%;
 }
 
 #icon {
     border: 2px solid aliceblue;
     border-radius: 8px;
+    margin-right: 1%;
 }
+
+.dropdown {
+    margin: 0 2%;
+    display: none;
+}
+
 
 /* Mobile Header */
 
@@ -90,18 +109,39 @@ body {
     background-repeat: no-repeat;
     background-position: 100%;
     background-origin: content-box;
-
 }
 
 
-.firstContainer {
-    height: 100%;
-    padding: 8%;
+.firstContainerContent {
+    font-size: 1.4rem;
+    height: fit-content;
+    padding: 12% 8% 0 8%;
     color: #e69422;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
     font-weight: bold;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.firstContainer>p {
-    text-shadow: none;
+.firstContainerContent>p {
+    font-size: 1.2rem;
+    text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0);
+}
+
+.conhecaButton {
+    align-self: center;
+    background-color: transparent;
+    margin-top: 3%;
+    color: #e69422;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.conhecaButton:hover {
+    background-color: #e69422;
+    color: aliceblue;
 }
