@@ -9,13 +9,9 @@ $(document).ready(function () {
         $('#exampleModal').modal();
     })
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() >= 50) {
-            $('.navBar').css('background', 'red');
-        } else {
-            $('.navBar').css('background', 'transparent');
-        }
-    });
+    $('navButton').on('click', () => {
+
+    })
 
 
 

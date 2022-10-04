@@ -24,19 +24,22 @@
         <nav id="navBar" class="navbar navbar-expand-lg">
             <div class="btnList">
                 <img id="icon" class="img-fluid" src="../images/012icon.jpeg" height="125" width="125">
-                <input type="button" class="btn btn-outline-light btn-sm navButton" value="Integrações">
-                <input type="button" class="btn btn-outline-light btn-sm navButton" value="Parceiros">
-                <input type="button" class="btn btn-outline-light btn-sm navButton" value="Contato">
+                <button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#sobreNos">Sobre
+                        Nós</a></button>
+                <button type="button" class="btn btn-outline-light btn-sm navButton"><a
+                        href="#integracoes">Integrações</a></button>
+                <button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#contato">
+                        Contato</a></button>
             </div>
             <div class="dropdown">
-                <button class="btn btn-default" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <button class="btn btn-default shadow-none" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Integrações</a>
-                    <a class="dropdown-item" href="#">Parceiros</a>
-                    <a class="dropdown-item" href="#">Contato</a>
+                    <a class="dropdown-item" href="#sobreNos">Sobre Nós</a>
+                    <a class="dropdown-item" href="#integracoes">Integrações</a>
+                    <a class="dropdown-item" href="#contato">Contato</a>
                 </div>
             </div>
         </nav>
@@ -44,20 +47,130 @@
             <div class="firstContainerContent">
                 <h1 id="mainTitle"> Zero Doze Pick 'n Go! </h1>
                 <p> A referência em logística de delivery do vale do paraíba</p>
-                <input type="button" class="btn btn-dark conhecaButton" value="Conheça"></input>
+                <button class="btn btn-outline conhecaButton shadow-none"><a href="#sobreNos">Conheça <i
+                            class="fa-sharp fa-solid fa-arrow-down"></i></button>
             </div>
         </div>
     </section>
 
 
-    <!--
+    <section id="sobreNos">
+        <div class="sobreNosContent">
 
-    ><footer>
+            <h2>Escolha a melhor opção para o seu negócio
+            </h2>
+            <ul>
+                <li>
+                    <h3>Entregadores por Disponibilidade:
+                    </h3>
+                    <p>
+                        Entregadores para realizar entregas
+                        avulsas de acordo com a disponibilidade
+                        de parceiros próximos.
+                        Sem custo fixo, somente as taxas de
+                        entrega disponibilizadas pela plataforma
+                    </p>
+                </li>
+                <li>
+                    <h3>Entregas Premium:</h3>
+                    <p>
+                        Entregadores para realizar entregas entre
+                        empresas próximas, de acordo com a
+                        disponibilidade de parceiros na região.
+                        Entregadores disponíveis na tela
+                        atribuição, tempo de espera 5 minutos por
+                        km de deslocamento.
+
+                        Sem custo fixo, somente as taxas de entrega
+                        disponibilizadas pela plataforma.
+                    </p>
+                </li>
+                <li>
+                    <h3>Entregas Exclusivas:</h3>
+                    <p>
+                        Entregadores para realizar entregas
+                        somente para seu estabelecimento.
+
+                        Planos a partir de R$ 30,00 (trinta reais) por
+                        período + taxas de entrega disponibilizadas pela
+                        plataforma.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="integracoes">
+        <div class="integracoesContent">
+            <h2>Algumas de nossas Integrações: </h2>
+            <div class="listaEmpresas">
+                <ul class="lista">
+                    <li>
+                        <img height="150" width="150" src="./images/ifood.png" alt="">
+                        <p>Ifood </p>
+                    </li>
+                    <li>
+                        <img height="150" width="150" src="./images/accon.png" alt="">
+                        <p> Accon </p>
+                    </li>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <img height="150" width="150" src="./images/iza.png" alt="">
+                        <p> Iza </p>
+                    </li>
+                    <li>
+                        <img height="150" width="150" src="./images/neemo.jpg" alt="">
+                        <p>Neemo</p>
+                    </li>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <img height="150" width="150" src="./images/deliverydireto.png" alt="">
+                        <p>Del. Direto</p>
+                    </li>
+                    <li>
+                        <img height="150" width="150" src="./images/anotaai.png" alt="">
+                        <p>Anota Ai</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="contato">
+        <div class="contatoContent">
+            <div class="cardContato">
+
+                <h2>Curtiu?</h2>
+                <p>Cadastre-se no botão abaixo para solicitar a visita de um consultor:</p>
+                <button class="btn btn-default-sm btn-contato">
+                    <a href="https://l.wl.co/l?u=https%3A%2F%2Facesso.pickngo.online%2FEmpresa%2FCadastrar%3Fcodigo%3DZERODOZE"
+                        target="_blank">
+                        Cadastrar </a>
+                </button>
+            </div>
+            <div class="cardContato">
+                <h2>Whatsapp</h2>
+                <p>Clique no botão abaixo para entrar em contato direto com um consultor:</p>
+                <button class="btn btn-default-sm btn-contato-wpp">
+                    <a href="https://wa.me/5512996375251?text=Olá%20gostaria%20de%20agendar%20uma%20visita"
+                        target="_blank">
+                        Whatsapp <i class="fa-brands fa-whatsapp"></i></a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
         <p>© All rights reserved<br>Rafael David, Web Developer<br><a href="https://github.com/rdvid"
                 target="_blank">@rdvid</a></p>
     </footer>
 
-    -->
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
