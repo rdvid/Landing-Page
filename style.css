@@ -10,6 +10,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 a,
@@ -23,25 +24,43 @@ li {
     list-style: none;
 }
 
-@keyframes fadeIn {
-    0% {
-        filter: sepia(100);
-    }
+/* WhatsApp Button */
 
-    100% {
-        filter: sepia(0);
-    }
+.whatsApp {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsApp:hover {
+    color: #F1F1F1;
+}
+
+.my-whatsApp {
+    margin: 16px;
 }
 
 /* header */
 
 #navBar {
-    padding: 1%;
     width: 100vw;
     flex-direction: row;
     justify-content: center;
     border: 2px solid #F1F1F1;
     box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.1);
+}
+
+.navbar {
+    padding: 0;
 }
 
 .navButton {
@@ -53,6 +72,8 @@ li {
     font-weight: bold;
     border-radius: 10%;
 }
+
+
 
 .navButton:hover {
     background-color: #f1f1f1cc;
@@ -71,6 +92,8 @@ li {
     border: 2px solid aliceblue;
     border-radius: 8px;
     margin-right: 1%;
+    height: 80%;
+    align-self: center;
 }
 
 .dropdown {
@@ -88,16 +111,36 @@ li {
     text-align: center;
 }
 
+.loginButtons {
+    display: flex;
+    margin-left: 5%;
+}
 
+.loginButtons>button:hover {
+    background-color: transparent;
+}
 
+.cadastroText,
+.cadastrarText {
+    font-size: 1rem;
+}
 
+.loginText,
+.gratisText {
+    color: #e69422;
+    font-weight: bolder;
+}
+
+.loginText:hover,
+.gratisText:hover {
+    text-decoration: underline;
+}
 
 /* Intro Section */
 
 #introSection {
     height: 120vh;
-    width: 100%;
-    background-image: url(../images/delivery.jpg);
+    width: 100vw;
     background-size: 100vh;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -106,7 +149,7 @@ li {
 
 
 .firstContainerContent {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     height: fit-content;
     padding: 8% 8% 0 8%;
     color: #e69422;
@@ -115,6 +158,7 @@ li {
     display: flex;
     flex-direction: column;
 }
+
 
 .firstContainerContent>p {
     font-size: 1.2rem;
@@ -141,17 +185,18 @@ li {
 /* Sobre nós section */
 
 #sobreNos {
-    height: fit-content;
-    width: 100%;
-    padding: 10px 0;
+    height: 100vh;
+    margin: 10% 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sobreNosContent {
     height: fit-content;
-    padding: 2% 5%;
+    padding: 5%;
     text-align: center;
-    border: 8px solid #e69422;
-    margin: 0 20% 20% 20%;
 }
 
 
@@ -166,6 +211,7 @@ li>h3 {
 }
 
 .sobreNosContent>ul {
+    height: fit-content;
     padding: 0 10%;
 }
 
@@ -173,8 +219,8 @@ li>h3 {
 /* Integraçoes  */
 
 #integracoes {
-    height: fit-content;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .integracoesContent {
@@ -190,38 +236,40 @@ li>h3 {
 }
 
 .integracoesContent>h2 {
-    margin-top: 8%;
+    padding-top: 4%;
+}
+
+
+.integracoesContent>footer {
+    font-size: 2rem;
+    padding-bottom: 8%;
 }
 
 .listaEmpresas {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: fit-content;
 }
 
 .lista,
 .lista>li {
     list-style: none;
-    margin: 8% 2%;
+    margin: 4% 2%;
 }
 
 li>img {
     border: 6px solid black;
     border-radius: 50%;
-    filter: sepia(100);
 }
 
-li>img:hover {
-    animation: fadeIn 2s;
-    cursor: pointer;
-}
 
 /* Contato */
 
 #contato {
     margin-top: 20px;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -275,7 +323,7 @@ li>img:hover {
 
 /* Footer */
 
-footer {
+.rodapeDev {
     margin: 0;
     padding: 1%;
     color: #F1F1F1;
@@ -285,12 +333,12 @@ footer {
     font-size: 1rem;
 }
 
-footer>p {
+.rodapeDev>p {
     margin: 0;
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
 
     /* Mobile Header */
 
@@ -343,21 +391,21 @@ footer>p {
     #introSection {
         display: flex;
         flex-direction: column;
-        height: 100vh !important;
+        height: 140vh;
         width: 100%;
-        background-image: none !important;
+        background-position: center;
     }
 
 
     .firstContainerContent {
-        height: fit-content;
-        margin-top: 20%;
+        margin: 2% 0 !important;
+        height: 100%;
         font-size: 1.4rem;
-        padding: 8% 8% 0 8%;
+        padding: 2%;
         color: #e69422;
         text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
         font-weight: bold;
-        width: fit-content;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -372,6 +420,15 @@ footer>p {
 
     /* Mobile Sobre Nós */
 
+    #sobreNos {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
     .sobreNosContent {
         margin: 0;
         padding: 10% 5%;
@@ -384,17 +441,41 @@ footer>p {
         margin: 10%;
     }
 
+
+    /* Mobile Integrações */
+
+    #integracoes {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .integracoesContent,
+    .integracoesContent>h2 {
+        padding: 8% 0;
+    }
+
     .listaEmpresas {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
+    .lista,
+    .lista>li {
+        margin: 0;
+    }
+
+
+    li>img {
+        border: 6px solid black;
+        border-radius: 50%;
+        filter: none;
+    }
 
     /* contato */
 
     #contato {
-        padding: 20%;
+        padding: 10% 20%;
         width: 100vw;
         height: fit-content;
         display: flex;
@@ -409,14 +490,14 @@ footer>p {
         width: 80vw;
         height: fit-content;
         background-color: whitesmoke;
-        padding: 20% 5%;
+        padding: 10% 5%;
         display: flex;
         flex-direction: column;
         border: 3px solid black;
     }
 
     .cardContato {
-        margin: 20% 0;
+        margin: 10% 0;
     }
 
 
