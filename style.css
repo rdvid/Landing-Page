@@ -147,9 +147,25 @@ li {
     background-origin: content-box;
 }
 
+#mainTitle {
+    width: fit-content;
+}
+
+
+.zeroDozeTitulo {
+    font-size: 4rem !important;
+    margin: 0;
+    line-height: 2rem;
+}
+
+.pickngo {
+    font-size: 2rem;
+    text-align: right;
+    color: black;
+    font-style: italic;
+}
 
 .firstContainerContent {
-    font-size: 1.5rem;
     height: fit-content;
     padding: 8% 8% 0 8%;
     color: #e69422;
@@ -161,7 +177,7 @@ li {
 
 
 .firstContainerContent>p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0);
 }
 
@@ -182,45 +198,63 @@ li {
 
 
 
-/* Sobre nós section */
+/* planos section */
 
-#sobreNos {
+#planos {
     height: 100vh;
-    margin: 10% 0;
+    margin: 5% 0;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .sobreNosContent {
+
     height: fit-content;
+    width: 80%;
     padding: 5%;
     text-align: center;
 }
 
-
-.sobreNosContent>h2 {
-    margin: 5% 0;
-    font-size: 1.6rem;
+#cardCarousel {
+    height: 50%;
 }
 
-
-li>h3 {
-    font-size: 1.3rem;
+.card {
+    border: none;
+    box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
+    display: flex;
 }
 
-.sobreNosContent>ul {
-    height: fit-content;
-    padding: 0 10%;
+.card-img-top {
+    border-radius: 8px;
 }
 
+.card-title {
+    font-size: 1.5rem;
+    color: #e69422;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.card-text {
+    padding: 12% 0;
+}
+
+.text-muted {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
 
 /* Integraçoes  */
 
 #integracoes {
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
+    pointer-events: none;
 }
 
 .integracoesContent {
@@ -350,7 +384,7 @@ li>img {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     /* Mobile Header */
 
@@ -371,6 +405,10 @@ li>img {
         width: 100%;
         margin: 0;
         justify-content: center;
+    }
+
+    .dropdown-menu {
+        width: 100vw !important;
     }
 
     #dropdownMenuButton {
@@ -422,6 +460,7 @@ li>img {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        align-items: center;
     }
 
 
@@ -430,29 +469,24 @@ li>img {
     }
 
 
-    /* Mobile Sobre Nós */
+    /* Mobile planos */
 
-    #sobreNos {
+    #planos {
         height: fit-content;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-    }
-
-    .sobreNosContent {
         margin: 0;
-        padding: 10% 5%;
-        text-align: center;
-        border: 8px solid #e69422;
     }
 
-    .sobreNosContent>h2,
-    .sobreNosContent>h3 {
-        margin: 10%;
+    .card {
+        margin: 10% 0;
     }
 
+    .card-deck {
+        flex-direction: column;
+    }
 
     /* Mobile Integrações */
 

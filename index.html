@@ -24,13 +24,12 @@
     <a href="https://wa.me/5512996375251?text=Olá%20gostaria%20de%20agendar%20uma%20visita" class="whatsApp"
         target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
 
-    <section clickable="false" id="introSection" class="bg-image"
-        style="background-image: url('./images/delivery.jpg');">
+    <section id="introSection" class="bg-image" style="background-image: url('./images/delivery.jpg');">
         <nav id=" navBar" class="navbar navbar-expand-lg">
             <div class="btnList">
                 <img id="icon" class="img-fluid" src="../images/012icon.jpeg" height="125" width="125">
-                <button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#sobreNos">Sobre
-                        Nós</a></button>
+                <button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#sobreNos">Planos
+                    </a></button>
                 <button type="button" class="btn btn-outline-light btn-sm navButton"><a
                         href="#integracoes">Integrações</a></button>
                 <button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#contato">
@@ -53,7 +52,7 @@
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#sobreNos">Sobre Nós</a>
+                    <a class="dropdown-item" href="#planos">Planos</a>
                     <a class="dropdown-item" href="#integracoes">Integrações</a>
                     <a class="dropdown-item" href="#contato">Nossos parceiros</a>
                     <a class="dropdown-item" href="#contato">Contato</a>
@@ -62,7 +61,14 @@
         </nav>
         <div class="firstContainer">
             <div class="firstContainerContent">
-                <h1 id="mainTitle"> <span class="zeroDozeTitulo"> Zero Doze </span> <br> Licenciado: Pick 'n Go! </h1>
+                <div id="mainTitle">
+                    <h1 class="zeroDozeTitulo">
+                        Zero Doze
+                    </h1>
+                    <p class="pickngo">
+                        Pick 'n Go!
+                    </p>
+                </div>
                 <p> A referência em logística de delivery do Vale do Paraíba</p>
                 <button class="btn btn-outline conhecaButton shadow-none"><a href="#sobreNos">Saiba mais <i
                             class="fa-sharp fa-solid fa-arrow-down"></i></button>
@@ -70,53 +76,63 @@
         </div>
     </section>
 
-    <section clickable="false" id="sobreNos">
+    <section id="planos">
         <div class="sobreNosContent">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="./images/imagem1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Entregadores por Disponibilidade</h3>
+                        <p class="card-text">
+                            Entregadores para realizar entregas
+                            avulsas de acordo com a disponibilidade
+                            de parceiros próximos.
+                        </p>
+                        <p class="card-text"><small class="text-muted">
+                                Sem custo fixo, somente as taxas de
+                                entrega disponibilizadas pela plataforma
+                            </small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/imagem2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Entregas Premium</h3>
+                        <p class="card-text">
+                            Entregadores para realizar entregas entre
+                            empresas próximas, de acordo com a
+                            disponibilidade de parceiros na região.
+                            Entregadores disponíveis na tela
+                            atribuição, tempo de espera 5 minutos por
+                            km de deslocamento.
 
-            <h2>Escolha a melhor opção para o seu negócio
-            </h2>
-            <ul>
-                <li>
-                    <h3>Entregadores por Disponibilidade:
-                    </h3>
-                    <p>
-                        Entregadores para realizar entregas
-                        avulsas de acordo com a disponibilidade
-                        de parceiros próximos.
-                        Sem custo fixo, somente as taxas de
-                        entrega disponibilizadas pela plataforma
-                    </p>
-                </li>
-                <li>
-                    <h3>Entregas Premium:</h3>
-                    <p>
-                        Entregadores para realizar entregas entre
-                        empresas próximas, de acordo com a
-                        disponibilidade de parceiros na região.
-                        Entregadores disponíveis na tela
-                        atribuição, tempo de espera 5 minutos por
-                        km de deslocamento.
-
-                        Sem custo fixo, somente as taxas de entrega
-                        disponibilizadas pela plataforma.
-                    </p>
-                </li>
-                <li>
-                    <h3>Entregas Exclusivas:</h3>
-                    <p>
-                        Entregadores para realizar entregas
-                        somente para seu estabelecimento.
-
-                        Planos a partir de R$ 30,00 (trinta reais) por
-                        período + taxas de entrega disponibilizadas pela
-                        plataforma.
-                    </p>
-                </li>
-            </ul>
+                        </p>
+                        <p class="card-text"><small class="text-muted">
+                                Sem custo fixo, somente as taxas de entrega
+                                disponibilizadas pela plataforma.
+                            </small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/imagem3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Entregas Exclusivas</h3>
+                        <p class="card-text">
+                            Entregadores para realizar entregas
+                            somente para seu estabelecimento.
+                        </p>
+                        <p class="card-text"><small class="text-muted">
+                                Planos a partir de R$ 30,00 (trinta reais) por
+                                período + taxas de entrega disponibilizadas pela
+                                plataforma.
+                            </small></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section clickable="false" id="integracoes">
+    <section id="integracoes">
         <div class="integracoesContent">
             <h2>Algumas de nossas Integrações: </h2>
             <div class="listaEmpresas">
@@ -158,7 +174,7 @@
 
     </section>
 
-    <!-- <section clickable="false" id="sobreNos">
+    <!-- <section  id="sobreNos">
         <div class="sobreNosContent">
 
             <h2>Escolha a melhor opção para o seu negócio
@@ -204,7 +220,7 @@
         </div>
     </section> -->
 
-    <section clickable="false" id="contato">
+    <section id="contato">
         <div class="contatoContent">
             <div class="cardContato">
 
