@@ -153,15 +153,21 @@ li {
 
 
 .zeroDozeTitulo {
-    font-size: 4rem !important;
+    font-size: 4.5rem !important;
     margin: 0;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 .pickngo {
     font-size: 2rem;
     text-align: right;
     color: black;
+    font-style: italic;
+    text-shadow: none;
+}
+
+.licenciado {
+    font-size: 1.6rem;
     font-style: italic;
 }
 
@@ -177,7 +183,7 @@ li {
 
 
 .firstContainerContent>p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0);
 }
 
@@ -223,7 +229,7 @@ li {
 }
 
 .card {
-    border: none;
+    border-radius: 8px;
     box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
     display: flex;
 }
@@ -366,6 +372,9 @@ li>img {
     margin: 5%;
 }
 
+.cta-button {
+    height: 25rem;
+}
 
 /* Footer */
 
@@ -545,6 +554,12 @@ li>img {
     .cardContato {
         margin: 10% 0;
     }
+
+    .cardContato>.card {
+        height: 250px;
+    }
+
+
 
 
 }
