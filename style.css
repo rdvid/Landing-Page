@@ -24,6 +24,7 @@ li {
     list-style: none;
 }
 
+
 /* WhatsApp Button */
 
 .whatsApp {
@@ -65,7 +66,6 @@ li {
 
 .navButton {
     margin: 0 2%;
-    background-color: none;
     border: none;
     color: black;
     font-size: 1.2rem;
@@ -76,7 +76,7 @@ li {
 
 
 .navButton:hover {
-    background-color: #f1f1f1cc;
+    background-color: transparent;
     color: black;
 }
 
@@ -139,23 +139,23 @@ li {
 /* Intro Section */
 
 #introSection {
-    height: 120vh;
+    height: fit-content;
     width: 100vw;
-    background-size: 100vh;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-origin: content-box;
+
 }
 
 #mainTitle {
     width: fit-content;
+    padding-top: 10%;
 }
 
 
 .zeroDozeTitulo {
-    font-size: 4.5rem !important;
+    font-weight: 600;
+    font-size: 4.5rem;
     margin: 0;
     line-height: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .pickngo {
@@ -173,16 +173,16 @@ li {
 
 .firstContainerContent {
     height: fit-content;
-    padding: 8% 8% 0 8%;
+    padding: 0 10%;
     color: #e69422;
     text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
     font-weight: bold;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 
-.firstContainerContent>p {
+.subtitle {
     font-size: 1.8rem;
     text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0);
 }
@@ -202,12 +202,22 @@ li {
     color: aliceblue;
 }
 
-
+.mainImage {
+    height: 80vh;
+    width: 100%;
+    flex: 1;
+    background-image: url('./images/delivery.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-origin: content-box;
+}
 
 /* planos section */
 
 #planos {
-    height: 100vh;
+    padding-top: 10%;
+    height: fit-content;
     margin: 5% 0;
     width: 100vw;
     display: flex;
@@ -305,22 +315,60 @@ li>img {
 
 /* Parceiros */
 
-#parceiros {
-    height: 100vh;
+#vantagens {
+    height: fit-content;
     width: 100vw;
+    background-color: aliceblue;
+    padding: 5% 0;
+
 }
 
-#carouselParceiros {
-    height: 80%;
-    width: 80%;
+.vantagensContent {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.vantagensTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: 5% 0;
+
+}
+
+.vantagensTitulo>h2 {
+    font-style: italic;
+    line-height: 0rem;
+    z-index: 1;
+}
+
+.orangeBar {
+    height: 1rem;
+    width: 100%;
+    background-color: #e69422;
+    line-height: normal;
+}
+
+.vantagensContent>ul>li {
+    font-size: 1.5rem;
+    font-weight: 600;
+    list-style: square;
+    color: #e69422;
+}
+
+.vantagensContent>ul>li>span {
+    color: rgba(0, 0, 0, 0.829);
 }
 
 
 /* Contato */
 
 #contato {
-    margin-top: 20px;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -333,11 +381,9 @@ li>img {
 .contatoContent {
     width: 80vw;
     height: fit-content;
-    background-color: whitesmoke;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    border: 3px solid black;
     font-size: 1.3rem;
 }
 
@@ -381,7 +427,7 @@ li>img {
 .rodapeDev {
     margin: 0;
     padding: 1%;
-    color: #F1F1F1;
+    color: #f1f1f1c2;
     background-color: black;
     height: fit-content;
     text-align: center;
@@ -448,19 +494,16 @@ li>img {
     /* Mobile Intro Section */
 
     #introSection {
-        display: flex;
-        flex-direction: column;
-        height: 140vh;
+        height: fit-content;
         width: 100%;
-        background-position: center;
     }
 
 
     .firstContainerContent {
         margin: 2% 0 !important;
         height: 100%;
-        font-size: 1.4rem;
-        padding: 2%;
+        font-size: 1.5rem;
+        padding: 4%;
         color: #e69422;
         text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
         font-weight: bold;
@@ -472,10 +515,31 @@ li>img {
         align-items: center;
     }
 
+    .mainImage {
+        width: 100%;
+        flex: 1;
+        background-image: url('./images/delivery.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-origin: content-box;
+    }
+
+    .pickngo {
+        padding-right: 15%;
+        font-size: 1.3rem;
+    }
+
+    .zeroDozeTitulo {
+        font-size: 3rem;
+        line-height: 2rem;
+        height: fit-content;
+    }
 
     .conhecaButton {
         display: none;
     }
+
 
 
     /* Mobile planos */
@@ -527,6 +591,21 @@ li>img {
         filter: none;
     }
 
+
+    /* Vantagens */
+
+    .vantagensContent {
+        padding: 8%;
+    }
+
+    .vantagensContent>ul>li {
+        font-size: 1rem;
+        font-weight: 600;
+        list-style: square;
+        color: #e69422;
+    }
+
+
     /* contato */
 
     #contato {
@@ -556,7 +635,7 @@ li>img {
     }
 
     .cardContato>.card {
-        height: 250px;
+        height: fit-content;
     }
 
 
