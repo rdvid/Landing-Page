@@ -159,15 +159,17 @@ li {
 }
 
 .pickngo {
+    padding-right: 25%;
     font-size: 2rem;
     text-align: right;
     color: black;
     font-style: italic;
     text-shadow: none;
+    margin-bottom: 5%;
 }
 
 .licenciado {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-style: italic;
 }
 
