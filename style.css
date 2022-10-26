@@ -9,7 +9,7 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: white;
+    background-color: #000000;
     scroll-behavior: smooth;
 }
 
@@ -24,6 +24,9 @@ li {
     list-style: none;
 }
 
+.btn-outline-light::selection {
+    padding: 0;
+}
 
 /* WhatsApp Button */
 
@@ -67,7 +70,7 @@ li {
 .navButton {
     margin: 0 2%;
     border: none;
-    color: black;
+    color: #e69422;
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 10%;
@@ -76,8 +79,8 @@ li {
 
 
 .navButton:hover {
+    color: #e69422;
     background-color: transparent;
-    color: black;
 }
 
 .btnList {
@@ -89,7 +92,7 @@ li {
 }
 
 #icon {
-    border: 2px solid aliceblue;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     margin-right: 1%;
     height: 80%;
@@ -104,6 +107,7 @@ li {
 #dropdownMenuButton,
 #dropdownMenuButton>i {
     background-color: transparent;
+    color: aliceblue;
 }
 
 .dropdown-menu {
@@ -127,7 +131,7 @@ li {
 
 .loginText,
 .gratisText {
-    color: #e69422;
+    color: aliceblue;
     font-weight: bolder;
 }
 
@@ -162,7 +166,7 @@ li {
     padding-right: 25%;
     font-size: 2rem;
     text-align: right;
-    color: black;
+    color: aliceblue;
     font-style: italic;
     text-shadow: none;
     margin-bottom: 5%;
@@ -171,6 +175,7 @@ li {
 .licenciado {
     font-size: 1.4rem;
     font-style: italic;
+    color: aliceblue;
 }
 
 .firstContainerContent {
@@ -213,6 +218,7 @@ li {
     background-repeat: no-repeat;
     background-position: 100%;
     background-origin: content-box;
+    background-color: transparent;
 }
 
 /* planos section */
@@ -244,6 +250,14 @@ li {
     border-radius: 8px;
     box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
     display: flex;
+}
+
+.cardPlanos {
+    height: fit-content;
+}
+
+.cardPlanos>.card-title {
+    color: #e69422;
 }
 
 .card-img-top {
@@ -320,7 +334,7 @@ li>img {
 #vantagens {
     height: fit-content;
     width: 100vw;
-    background-color: aliceblue;
+    background-color: #0000;
     padding: 5% 0;
 
 }
@@ -346,6 +360,7 @@ li>img {
     font-style: italic;
     line-height: 0rem;
     z-index: 1;
+    color: aliceblue;
 }
 
 .orangeBar {
@@ -363,7 +378,7 @@ li>img {
 }
 
 .vantagensContent>ul>li>span {
-    color: rgba(0, 0, 0, 0.829);
+    color: aliceblue;
 }
 
 
@@ -381,12 +396,14 @@ li>img {
 }
 
 .contatoContent {
+    margin: 6%;
     width: 80vw;
     height: fit-content;
     padding: 10px;
     display: flex;
     flex-direction: row;
     font-size: 1.3rem;
+    background-color: #000000 !important;
 }
 
 
@@ -413,6 +430,12 @@ li>img {
     font-weight: bold;
 }
 
+.card {
+    border: 2px solid black;
+    color: #000000;
+    border-radius: 16px;
+}
+
 .cardContato {
     text-align: center;
     justify-content: center;
@@ -420,8 +443,18 @@ li>img {
     margin: 5%;
 }
 
+.cardContatoContainer {
+    background-color: #000000;
+}
+
+.cardContatoContainer>.card-body,
+.card-title {
+    color: aliceblue;
+}
+
 .cta-button {
     height: 25rem;
+    border: 0;
 }
 
 /* Footer */
@@ -555,7 +588,12 @@ li>img {
         margin: 0;
     }
 
+    .card-body {
+        height: fit-content !important;
+    }
+
     .card {
+        height: fit-content;
         margin: 10% 0;
     }
 
@@ -597,7 +635,8 @@ li>img {
     /* Vantagens */
 
     .vantagensContent {
-        padding: 8%;
+        padding: 8% 20%;
+        text-align: center;
     }
 
     .vantagensContent>ul>li {
