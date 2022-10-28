@@ -373,8 +373,7 @@ li>img {
 .vantagensContent>ul>li {
     font-size: 1.5rem;
     font-weight: 600;
-    list-style: square;
-    color: #e69422;
+    list-style-image: url(./images/right-long-solid.svg);
 }
 
 .vantagensContent>ul>li>span {
@@ -404,35 +403,46 @@ li>img {
     flex-direction: row;
     font-size: 1.3rem;
     background-color: #000000 !important;
+    justify-content: space-around;
 }
 
 
+.btn-contato {
+    height: fit-content;
+    margin-top: 12%;
+}
+
+.btn-contato-wpp {
+    margin-top: 4%;
+}
+
 .btn-contato,
 .btn-contato-wpp {
-    margin-top: 10%;
     font-size: 1.5rem;
     height: fit-content;
     width: max-content;
-    background-color: white;
+    background-color: #000000;
     box-shadow: 4px 4px 5px black;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 .btn-contato:hover {
     cursor: pointer;
     background-color: #e69422;
-    font-weight: bold;
+    color: #000000;
 }
 
 
 .btn-contato-wpp:hover {
     cursor: pointer;
-    background-color: #25D366;
-    font-weight: bold;
+    background-color: whitesmoke;
+    color: #000000;
 }
+
 
 .card {
     border: 2px solid black;
-    color: #000000;
     border-radius: 16px;
 }
 
@@ -444,17 +454,21 @@ li>img {
 }
 
 .cardContatoContainer {
-    background-color: #000000;
+    background-color: aliceblue;
 }
 
-.cardContatoContainer>.card-body,
-.card-title {
-    color: aliceblue;
+.cardContatoContainer>.card-title {
+    color: #e69422;
 }
 
 .cta-button {
     height: 25rem;
     border: 0;
+}
+
+.card-body-contato {
+    height: 25rem;
+    width: 100%;
 }
 
 /* Footer */
@@ -474,7 +488,7 @@ li>img {
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
 
     /* Mobile Header */
 
@@ -561,13 +575,13 @@ li>img {
     }
 
     .pickngo {
-        padding-right: 15%;
-        font-size: 1.3rem;
+        padding-right: 10%;
+        font-size: 1.2rem;
     }
 
     .zeroDozeTitulo {
-        font-size: 3rem;
-        line-height: 2rem;
+        font-size: 4rem;
+        line-height: 3rem;
         height: fit-content;
     }
 
@@ -640,9 +654,9 @@ li>img {
     }
 
     .vantagensContent>ul>li {
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: 600;
-        list-style: square;
+        list-style-image: url(./images/right-long-solid.svg);
         color: #e69422;
     }
 
@@ -679,7 +693,10 @@ li>img {
         height: fit-content;
     }
 
-
+    .card-body-contato {
+        height: fit-content;
+        width: 100%;
+    }
 
 
 }
