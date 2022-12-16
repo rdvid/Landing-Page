@@ -91,6 +91,14 @@ li {
     margin: 0 3%;
 }
 
+.btn-outline-light>a {
+    text-shadow:
+        0.03em 0 black,
+        0 0.03em black,
+        -0.03em 0 black,
+        0 -0.03em black;
+}
+
 #icon {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
@@ -145,12 +153,19 @@ li {
 #introSection {
     height: fit-content;
     width: 100vw;
-
+    background-image: url(./images/background/entrega\ no\ muro.jpg);
+    background-size: cover;
+    z-index: 1;
 }
 
 #mainTitle {
     width: fit-content;
     padding-top: 10%;
+    text-shadow:
+        0.1em 0 black,
+        0 0.1em black,
+        -0.1em 0 black,
+        0 -0.1em black;
 }
 
 
@@ -168,7 +183,11 @@ li {
     text-align: right;
     color: aliceblue;
     font-style: italic;
-    text-shadow: none;
+    text-shadow:
+        0.02em 0 black,
+        0 0.02em black,
+        -0.02em 0 black,
+        0 -0.02em black;
     margin-bottom: 5%;
 }
 
@@ -176,6 +195,11 @@ li {
     font-size: 1.4rem;
     font-style: italic;
     color: aliceblue;
+    text-shadow:
+        0.02em 0 black,
+        0 0.02em black,
+        -0.02em 0 black,
+        0 -0.02em black;
 }
 
 .firstContainerContent {
@@ -191,7 +215,12 @@ li {
 
 .subtitle {
     font-size: 1.8rem;
-    text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0);
+    text-shadow:
+        0.03em 0 black,
+        0 0.03em black,
+        -0.03em 0 black,
+        0 -0.03em black;
+
 }
 
 .conhecaButton {
@@ -202,6 +231,11 @@ li {
     font-size: 1.5rem;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     width: fit-content;
+    text-shadow:
+        0.03em 0 black,
+        0 0.03em black,
+        -0.03em 0 black,
+        0 -0.03em black;
 }
 
 .conhecaButton:hover {
@@ -213,12 +247,13 @@ li {
     height: 80vh;
     width: 100%;
     flex: 1;
-    background-image: url('./images/delivery.jpg');
+    /*background-image: url('./images/delivery.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
     background-origin: content-box;
     background-color: transparent;
+    */
 }
 
 /* planos section */
@@ -287,6 +322,8 @@ li {
     height: fit-content;
     width: 100vw;
     pointer-events: none;
+    background-image: url(./images/background/entrega\ mao\ a\ mao.jpg);
+    background-size: cover;
 }
 
 .integracoesContent {
@@ -296,13 +333,16 @@ li {
     flex-direction: column;
     justify-content: start;
     text-align: center;
-    height: fit-content;
-    background-color: #e69422;
     border: 4px solid black;
 }
 
 .integracoesContent>h2 {
     padding-top: 4%;
+    text-shadow:
+        0.03em 0 black,
+        0 0.03em black,
+        -0.03em 0 black,
+        0 -0.03em black;
 }
 
 
@@ -322,6 +362,7 @@ li {
 .lista>li {
     list-style: none;
     margin: 4% 2%;
+    font-size: 1.5rem;
 }
 
 li>img {
@@ -334,9 +375,9 @@ li>img {
 #vantagens {
     height: fit-content;
     width: 100vw;
-    background-color: #0000;
+    background-image: url(./images/background/entrega\ ok.jpg);
+    background-size: cover;
     padding: 5% 0;
-
 }
 
 .vantagensContent {
@@ -361,6 +402,11 @@ li>img {
     line-height: 0rem;
     z-index: 1;
     color: aliceblue;
+    text-shadow:
+        0.03em 0 black,
+        0 0.03em black,
+        -0.03em 0 black,
+        0 -0.03em black;
 }
 
 .orangeBar {
@@ -373,11 +419,15 @@ li>img {
 .vantagensContent>ul>li {
     font-size: 1.5rem;
     font-weight: 600;
-    list-style-image: url(./images/right-long-solid.svg);
 }
 
 .vantagensContent>ul>li>span {
     color: aliceblue;
+    text-shadow:
+        0.03em 0 black,
+        0 0.03em black,
+        -0.03em 0 black,
+        0 -0.03em black;
 }
 
 
@@ -620,6 +670,8 @@ li>img {
     #integracoes {
         height: fit-content;
         width: 100%;
+        background-color: #e69422;
+        background-image: none;
     }
 
     .integracoesContent,
@@ -648,6 +700,7 @@ li>img {
 
     /* Vantagens */
 
+
     .vantagensContent {
         padding: 8% 20%;
         text-align: center;
@@ -656,7 +709,6 @@ li>img {
     .vantagensContent>ul>li {
         font-size: 2rem;
         font-weight: 600;
-        list-style-image: url(./images/right-long-solid.svg);
         color: #e69422;
     }
 
