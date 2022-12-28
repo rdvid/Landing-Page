@@ -77,7 +77,6 @@ li {
 }
 
 
-
 .navButton:hover {
     color: #e69422;
     background-color: transparent;
@@ -100,10 +99,8 @@ li {
 }
 
 #icon {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 8px;
     margin-right: 1%;
-    height: 80%;
+    height: 60%;
     align-self: center;
 }
 
@@ -153,7 +150,7 @@ li {
 #introSection {
     height: fit-content;
     width: 100vw;
-    background-image: url(./images/background/entrega\ no\ muro.jpg);
+    background-image: url(../img/background/entrega\ no\ muro.jpg);
     background-size: cover;
     z-index: 1;
 }
@@ -203,7 +200,7 @@ li {
 }
 
 .firstContainerContent {
-    height: fit-content;
+    height: 100vh;
     padding: 0 10%;
     color: #e69422;
     text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
@@ -370,7 +367,7 @@ li>img {
     border-radius: 50%;
 }
 
-/* Parceiros */
+/* Vantagens */
 
 #vantagens {
     height: fit-content;
@@ -430,6 +427,8 @@ li>img {
         0 -0.03em black;
 }
 
+
+/* Parceiros */
 
 /* Contato */
 

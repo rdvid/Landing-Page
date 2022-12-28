@@ -1,0 +1,230 @@
+@import url(./style2.css);
+
+
+strong {
+	font-weight: 600;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.medium-paragraph {
+	font-size: 17px;
+	line-height: 32px;
+}
+
+
+
+/* WhatsApp Button */
+
+.whatsApp {
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 50px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+}
+
+.whatsApp:hover {
+	color: #F1F1F1;
+}
+
+.my-whatsApp {
+	margin: 16px;
+}
+
+
+/***** General style, all sections *****/
+
+.carousel-caption>h5 {
+
+	font-weight: 600;
+	text-shadow: 0.03em 0 black,
+		0 0.03em black,
+		-0.03em 0 black,
+		0 -0.03em black;
+}
+
+.section-container {
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+.section-container-gray-bg {
+	background: #f8f8f8;
+}
+
+.section-container-image-bg,
+.section-container-image-bg h2,
+.section-container-image-bg h3 {
+	color: #fff;
+}
+
+.section-container-image-bg .divider-1 span {
+	border-color: #fff;
+}
+
+.section-description {
+	margin-top: 60px;
+	padding-bottom: 10px;
+}
+
+.section-description p {
+	margin-top: 20px;
+	padding: 0 120px;
+}
+
+.section-container-image-bg .section-description p {
+	opacity: 0.8;
+}
+
+.section-bottom-button {
+	padding-top: 60px;
+}
+
+
+/***** Divider *****/
+
+.divider-1 span {
+	display: inline-block;
+	width: 200px;
+	border-bottom: 1px dotted #aaa;
+}
+
+
+/***** Top menu *****/
+
+
+/***** Top content *****/
+
+.top-content {
+	width: 100%;
+	padding-top: 100px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	border: 0;
+}
+
+
+/***** Section 1 *****/
+
+.section-1-box {
+	padding-top: 30px;
+	text-align: left;
+}
+
+.section-1-box .section-1-box-icon {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+
+	background: #8542a0;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a365bc), color-stop(100%, #8542a0));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #a365bc 0%, #8542a0 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a365bc', endColorstr='#8542a0', GradientType=0);
+	/* IE6-9 */
+
+	font-size: 40px;
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-o-transition: all .6s;
+	-moz-transition: all .6s;
+	-webkit-transition: all .6s;
+	-ms-transition: all .6s;
+	transition: all .6s;
+}
+
+.section-1-box h3 {
+	margin-top: 0;
+	padding: 0 0 10px 0;
+}
+
+
+/***** Section 2 *****/
+
+.section-2-box {
+	margin-top: 30px;
+	text-align: left;
+}
+
+.section-2-box h3 {
+	margin-top: 0;
+}
+
+.section-2-box-text .medium-paragraph {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/***** Section 3 *****/
+
+.section-3-box {
+	margin-top: 30px;
+	text-align: left;
+}
+
+.section-3-box .section-3-box-icon {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+
+	background: #8542a0;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a365bc), color-stop(100%, #8542a0));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #a365bc 0%, #8542a0 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a365bc', endColorstr='#8542a0', GradientType=0);
+	/* IE6-9 */
+
+	font-size: 28px;
+	color: #fff;
+	line-height: 60px;
+	text-align: center;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.section-3-box h3 {
+	margin-top: 0;
+	padding: 0 0 10px 0;
+}
+
+
+/***** Footer *****/
