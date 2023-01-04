@@ -592,7 +592,7 @@ li>img {
     /* Mobile Intro Section */
 
     #introSection {
-        height: fit-content;
+        height: 100vh;
         width: 100%;
     }
 
