@@ -56,7 +56,6 @@ img {
 
 .section-container {
 	margin: 0 auto;
-	padding-bottom: 80px;
 }
 
 .section-container-gray-bg {
@@ -128,26 +127,10 @@ img {
 	width: 80px;
 	height: 80px;
 	margin: 0 auto;
-
-	background: #8542a0;
-	/* Old browsers */
-	background: -moz-linear-gradient(top, #a365bc 0%, #8542a0 100%);
-	/* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a365bc), color-stop(100%, #8542a0));
-	/* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #a365bc 0%, #8542a0 100%);
-	/* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #a365bc 0%, #8542a0 100%);
-	/* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #a365bc 0%, #8542a0 100%);
-	/* IE10+ */
-	background: linear-gradient(to bottom, #a365bc 0%, #8542a0 100%);
-	/* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a365bc', endColorstr='#8542a0', GradientType=0);
-	/* IE6-9 */
+	background-color: #e69422;
 
 	font-size: 40px;
-	color: #fff;
+	color: black;
 	line-height: 80px;
 	text-align: center;
 	-moz-border-radius: 50%;
@@ -228,3 +211,25 @@ img {
 
 
 /***** Footer *****/
+
+.col-md-8 {
+	color: aliceblue;
+	text-shadow:
+		0.03em 0 black,
+		0 0.03em black,
+		-0.03em 0 black,
+		0 -0.03em black;
+}
+
+
+.col-md-9 {
+	color: black;
+	padding: 10% 0;
+	background-color: #e69422;
+	text-align: center;
+	text-shadow:
+		0.03em 0 black,
+		0 0.03em black,
+		-0.03em 0 black,
+		0 -0.03em black;
+}

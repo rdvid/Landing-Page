@@ -71,13 +71,11 @@
 			<div class="btnList">
 				<img id="icon" class="img-fluid" src="./src/assets/img/picklogo.png" height="80" width="80"
 					style="border: none;">
-				<button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#planos">Planos
-					</a></button>
 				<button type="button" class="btn btn-outline-light btn-sm navButton"><a
-						href="#integracoes">Integrações</a></button>
-				<button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#vantagens">
+						href="#integracoes-content">Integrações</a></button>
+				<button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#vantagens-content">
 						Vantagens</a></button>
-				<button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#contato">
+				<button type="button" class="btn btn-outline-light btn-sm navButton"><a href="#contato-content">
 						Contato</a></button>
 				<div class="loginButtons">
 					<button type="button" class="btn btn-outline-light btn-sm navButton"><a
@@ -97,10 +95,9 @@
 					<i class="fa-solid fa-bars"></i>
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#planos">Planos</a>
-					<a class="dropdown-item" href="#integracoes">Integrações</a>
-					<a class="dropdown-item" href="#vantagens">Vantagens</a>
-					<a class="dropdown-item" href="#contato">Contato</a>
+					<a class="dropdown-item" href="#integracoes-content">Integrações</a>
+					<a class="dropdown-item" href="#vantagens-content">Vantagens</a>
+					<a class="dropdown-item" href="#contato-content">Contato</a>
 				</div>
 			</div>
 		</nav>
@@ -114,8 +111,8 @@
 						<span class="licenciado">Licenciado </span>Pick n Go!
 					</p>
 					<p class="subtitle"> A referência em logística de delivery <br>do Vale do Paraíba</p>
-					<button class="btn btn-outline conhecaButton shadow-none"><a href="#planos">Saiba mais <i
-								class="fa-sharp fa-solid fa-arrow-down"></i></a></button>
+					<button class="btn btn-outline conhecaButton shadow-none"><a href="#integracoes-content">Saiba mais
+							<i class="fa-sharp fa-solid fa-arrow-down"></i></a></button>
 				</div>
 				<!-- <div class="mainImage">
                     <img src="./images/entrega.jpeg" class="img img-fluid">
@@ -126,7 +123,7 @@
 
 	<div class="top-content">
 		<h2 style="text-align: center; color: #e69422">Algumas de nossas integrações</h2>
-		<div class="container-fluid">
+		<div id="integracoes-content" class="container-fluid">
 			<div id="carousel-example" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner row w-100 mx-auto" role="listbox">
 					<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active accon">
@@ -190,32 +187,40 @@
 		</div>
 	</div>
 
-	<!-- Section 1 -->
 	<div class="section-1-container section-container">
 		<div class="container">
-			<div class="row">
+			<div id="vantagens-content" class="row">
 				<div class="col section-1 section-description wow fadeIn">
-					<h1 style="text-align: center; color: #e69422">Algumas de nossas integrações</h1>
+					<h1 style="text-align: center; color: #e69422">Vantagens</h1>
 					<div class="divider-1 wow fadeInUp"><span></span></div>
-					<p>
-						<!--This is a free <strong>Carousel</strong> template with <strong>Multiple Items</strong> made with
-						the <strong>Bootstrap 4</strong> framework. Check it out now. Download it, customize and use it
-						as you like!-->
-					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 section-1-box wow fadeInUp">
 					<div class="row">
 						<div class="col-md-4">
-							<div class="section-1-box-icon">
-								<i class="fas fa-magic"></i>
+							<div class="section-1-box-icon" style="background-color: #e69422;">
+								<i class="fa-solid fa-list-check"></i>
 							</div>
 						</div>
 						<div class="col-md-8">
-							<h3>Branding</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut labore et.</p>
+							<h3>Controle</h3>
+							<li>
+								<span>
+									<i class="fa-solid fa-share" style="color: #e69422;"></i> Rastreio do entregador em
+									tempo real
+								</span>
+							</li>
+							<li>
+								<span>
+									<i class="fa-solid fa-share" style="color: #e69422;"></i> Central de logística
+								</span>
+							</li>
+							<li>
+								<span>
+									<i class="fa-solid fa-share" style="color: #e69422;"></i> Relatório das entregas
+								</span>
+							</li>
 						</div>
 					</div>
 				</div>
@@ -223,13 +228,25 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="section-1-box-icon">
-								<i class="fas fa-cog"></i>
+								<i class="fa-solid fa-shield-halved"></i>
 							</div>
 						</div>
 						<div class="col-md-8">
-							<h3>Web design</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut labore et.</p>
+							<h3>Segurança</h3>
+							<li>
+								<span>
+									<i class="fa-solid fa-share" style="color: #e69422" ;></i> Entregadores treinados,
+									avaliados,
+									com perfil para melhor atender o <br>seu
+									estabelecimento e qualidade no
+									atendimento ao seu cliente.
+								</span>
+							</li>
+							<li>
+								<span>
+									<i class="fa-solid fa-share" style="color: #e69422;"></i> Suporte Humanizado
+								</span>
+							</li>
 						</div>
 					</div>
 				</div>
@@ -237,13 +254,22 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="section-1-box-icon">
-								<i class="fab fa-twitter"></i>
+								<i class="fa-solid fa-chart-simple"></i>
 							</div>
 						</div>
 						<div class="col-md-8">
-							<h3>Social media</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut labore et.</p>
+							<h3>Planejamento</h3>
+							<li>
+								<span>
+									<i class="fa-solid fa-share" style="color: #e69422;"></i> Mapeamento de calor
+								</span>
+							</li>
+							<li>
+								<span>
+									<i class="fa-solid fa-share" style="color: #e69422;"></i> Melhor custo benefício do
+									mercado
+								</span>
+							</li>
 						</div>
 					</div>
 				</div>
@@ -252,7 +278,7 @@
 	</div>
 
 	<!-- Section 2 -->
-	<div class="section-2-container section-container section-container-gray-bg">
+	<!-- <div class="section-2-container section-container section-container-gray-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col section-2 section-description wow fadeIn">
@@ -282,7 +308,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Section 3 -->
 	<div class="section-3-container section-container">
@@ -290,49 +316,56 @@
 
 			<div class="row">
 				<div class="col section-3 section-description wow fadeIn">
-					<h2>Section 3</h2>
+					<h2 style="text-align: center; color: #e69422">Contato</h2>
 					<div class="divider-1 wow fadeInUp"><span></span></div>
 				</div>
 			</div>
 
-			<div class="row">
+			<div id="contato-content" class="row">
 				<div class="col-md-6 section-3-box wow fadeInLeft">
 					<div class="row">
-						<div class="col-md-3">
+						<!-- <div class="col-md-3">
 							<div class="section-3-box-icon">
 								<i class="fas fa-paperclip"></i>
 							</div>
-						</div>
+						</div> -->
 						<div class="col-md-9">
-							<h3>Ut wisi enim ad minim</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut labore et.
-								Ut wisi enim ad minim veniam, quis nostrud.
+							<h3>Curtiu? <i class="fa-solid fa-thumbs-up"></i></h3>
+							<p class="card-text">
+								Cadastre-se no botão abaixo para solicitar a visita de um consultor:
 							</p>
+							<button class="btn btn-default-sm btn-contato">
+								<img src="./src/assets/img/picklogo.png" height="40" width="40"><a
+									href="https://l.wl.co/l?u=https%3A%2F%2Facesso.pickngo.online%2FEmpresa%2FCadastrar%3Fcodigo%3DZERODOZE"
+									target="_blank">
+									Agendar visita!</a>
+							</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 section-3-box wow fadeInLeft">
 					<div class="row">
-						<div class="col-md-3">
+						<!-- <div class="col-md-3">
 							<div class="section-3-box-icon">
 								<i class="fas fa-pencil-alt"></i>
 							</div>
-						</div>
+						</div> -->
 						<div class="col-md-9">
-							<h3>Sed do eiusmod tempor</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut labore et.
-								Ut wisi enim ad minim veniam, quis nostrud.
+							<h3>Baixe nosso App <i class="fa-solid fa-mobile-screen-button"></i></h3>
+							<p class="card-text">
+								Clique no botão abaixo para ser redirecionado para o download do nosso aplicativo:
 							</p>
+							<button class="btn btn-default-sm btn-contato-wpp">
+								<img src="./src/assets/img/oldimages/playstore.png" height="20" width="20"><a
+									href="https://play.google.com/store/apps/details?id=online.pickngo" target="_blank">
+									App Store</a>
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-md-6 section-3-box wow fadeInLeft">
 					<div class="row">
 						<div class="col-md-3">
@@ -367,25 +400,22 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 	</div>
 
 	<!-- Section 4 -->
-	<div class="section-4-container section-container section-container-image-bg">
+	<!-- <div class="section-4-container section-container section-container-image-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col section-4 section-description wow fadeInLeftBig">
 					<h2>Section 4</h2>
-					<p>
-						Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-						aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
-					</p>
+					
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Footer -->
 	<footer class="rodapeDev">
