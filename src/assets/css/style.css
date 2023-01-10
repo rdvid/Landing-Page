@@ -212,7 +212,8 @@ img {
 
 /***** Footer *****/
 
-.col-md-8 {
+.col-md-8,
+.card-body {
 	color: aliceblue;
 	text-shadow:
 		0.03em 0 black,
@@ -232,4 +233,22 @@ img {
 		0 0.03em black,
 		-0.03em 0 black,
 		0 -0.03em black;
+}
+
+.section-3-container {
+	background-color: #e69422;
+	margin: 10% 0;
+}
+
+.card {
+	background-color: #000;
+	text-align: center;
+}
+
+.card-footer>button {
+	font-size: 1rem;
+}
+
+.card-title {
+	padding: 6%;
 }

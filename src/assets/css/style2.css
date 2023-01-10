@@ -175,7 +175,7 @@ li {
 }
 
 .pickngo {
-    padding-right: 25%;
+    padding-right: 10%;
     font-size: 2rem;
     text-align: right;
     color: aliceblue;
@@ -538,6 +538,10 @@ li>img {
 
     /* Mobile Header */
 
+    #mainTitle {
+        margin-top: 15%;
+    }
+
     #icon,
     .navButton {
         display: none;
@@ -591,7 +595,7 @@ li>img {
     #introSection {
         height: 100vh;
         width: 100%;
-        background-image: url(../img/mobilebg/jovem\ com\ caixa.jpg);
+        background-image: url(../img/mobilebg/homemcomentregas.jpg);
         background-size: cover;
         background-position: center center;
     }
@@ -629,7 +633,11 @@ li>img {
         display: none;
     }
 
+    .subtitle {
+        text-shadow:
+            -8px -8px -8px rgb(0, 0, 0);
 
+    }
 
     /* Mobile planos */
 
@@ -705,39 +713,8 @@ li>img {
 
     /* contato */
 
-    #contato {
-        padding: 10% 20%;
+    .contatoFlexContainer {
         width: 100vw;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #e69422;
-        border: 4px solid black;
-    }
-
-    .contatoContent {
-        width: 80vw;
-        height: fit-content;
-        background-color: whitesmoke;
-        padding: 10% 5%;
-        display: flex;
-        flex-direction: column;
-        border: 3px solid black;
-    }
-
-    .cardContato {
-        margin: 10% 0;
-    }
-
-    .cardContato>.card {
-        height: fit-content;
-    }
-
-    .card-body-contato {
-        height: fit-content;
-        width: 100%;
     }
 
 
@@ -747,7 +724,7 @@ li>img {
 
 
     #mainTitle {
-        padding-top: 20%;
+        padding-top: 40%;
     }
 
     .zeroDozeTitulo {
@@ -785,6 +762,11 @@ li>img {
 
     .subtitle {
         font-size: 1.8rem;
+    }
+
+    .contatoFlexContainer {
+        flex-direction: column;
+        margin: 0 10%;
     }
 
 }

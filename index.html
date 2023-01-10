@@ -103,14 +103,14 @@
 		</nav>
 		<div class="firstContainer">
 			<div class="firstContainerContent">
-				<div id="mainTitle">
+				<div id="mainTitle" class="fadeIn animated">
 					<h1 class="zeroDozeTitulo">
 						Zero Doze
 					</h1>
 					<p class="pickngo">
 						<span class="licenciado">Licenciado </span>Pick n Go!
 					</p>
-					<p class="subtitle"> A referência em logística de delivery <br>do Vale do Paraíba</p>
+					<p class="subtitle">Seu cliente pede, <br> a gente entrega</p>
 					<button class="btn btn-outline conhecaButton shadow-none"><a href="#integracoes-content">Saiba mais
 							<i class="fa-sharp fa-solid fa-arrow-down"></i></a></button>
 				</div>
@@ -168,12 +168,13 @@
 							<h5>Neemo</h5>
 						</div>
 					</div>
-					<!-- <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-						<img src="assets/img/integracoes/" class="img-fluid mx-auto d-block" alt="img7">
-					</div>
 					<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-						<img src="assets/img/backgrounds/8.jpg" class="img-fluid mx-auto d-block" alt="img8">
-					</div> -->
+						<img src="./src/assets/img/integracoes/012app2.jpeg" height="260"
+							class="img-fluid mx-auto d-block" alt="img7">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>012 app</h5>
+						</div>
+					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -313,49 +314,43 @@
 	<!-- Section 3 -->
 	<div class="section-3-container section-container">
 		<div class="container">
-
-			<div class="row">
-				<div class="col section-3 section-description wow fadeIn">
-					<h2 style="text-align: center; color: #e69422">Contato</h2>
-					<div class="divider-1 wow fadeInUp"><span></span></div>
-				</div>
-			</div>
-
 			<div id="contato-content" class="row">
-				<div class="col-md-6 section-3-box wow fadeInLeft">
-					<div class="row">
-						<!-- <div class="col-md-3">
-							<div class="section-3-box-icon">
-								<i class="fas fa-paperclip"></i>
-							</div>
-						</div> -->
-						<div class="col-md-9">
-							<h3>Curtiu? <i class="fa-solid fa-thumbs-up"></i></h3>
-							<p class="card-text">
-								Cadastre-se no botão abaixo para solicitar a visita de um consultor:
-							</p>
-							<button class="btn btn-default-sm btn-contato">
-								<img src="./src/assets/img/picklogo.png" height="40" width="40"><a
+				<div class="contatoFlexContainer wow fadeInLeft" style="display: flex;">
+					<div class="card card-wpp">
+						<h3 class="card-title">Cadastre-se</h3>
+						<p class="card-body">
+							Clique no botão abaixo e preencha nosso formulário de adesão
+						<div class="card-footer">
+							<button class="btn btn-default-sm btn-contato-wpp card-footer">
+								<img src="./src/assets/img/picklogo.png" height="20" width="20"><a
 									href="https://l.wl.co/l?u=https%3A%2F%2Facesso.pickngo.online%2FEmpresa%2FCadastrar%3Fcodigo%3DZERODOZE"
 									target="_blank">
-									Agendar visita!</a>
+									Cadastrar</a>
 							</button>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6 section-3-box wow fadeInLeft">
-					<div class="row">
-						<!-- <div class="col-md-3">
-							<div class="section-3-box-icon">
-								<i class="fas fa-pencil-alt"></i>
-							</div>
-						</div> -->
-						<div class="col-md-9">
-							<h3>Baixe nosso App <i class="fa-solid fa-mobile-screen-button"></i></h3>
-							<p class="card-text">
-								Clique no botão abaixo para ser redirecionado para o download do nosso aplicativo:
-							</p>
-							<button class="btn btn-default-sm btn-contato-wpp">
+					<div class="card card-wpp">
+						<h3 class="card-title">Contato<i class="fa-solid fa-mobile-screen-button"></i></h3>
+						<p class="card-body">
+							Clique no botão abaixo para entrar em contato com um dos nossos representantes:
+						</p>
+						<div class="card-footer">
+							<button class="btn btn-default-sm btn-contato-wpp card-footer">
+								<i class="fa fa-whatsapp my-whatsApp">
+									<a href="https://wa.me/5512996375251?text=Olá%20gostaria%20de%20agendar%20uma%20visita"
+										target="_blank">Contato</a>
+								</i>
+							</button>
+						</div>
+					</div>
+					<div class="card card-wpp">
+						<h3 class="card-title">Conheça nossos produtos
+						</h3>
+						<p class="card-body">
+							Clique no botão abaixo para saber mais sobre outros produtos da 012
+						</p>
+						<div class="card-footer">
+							<button class="btn btn-light-sm btn-contato-wpp card-footer">
 								<img src="./src/assets/img/oldimages/playstore.png" height="20" width="20"><a
 									href="https://play.google.com/store/apps/details?id=online.pickngo" target="_blank">
 									App Store</a>
