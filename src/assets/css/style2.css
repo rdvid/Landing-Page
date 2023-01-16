@@ -120,6 +120,27 @@ li {
     text-align: center;
 }
 
+.dropdown-menu.show {
+    background-color: #070606;
+    margin: 0;
+    border: 0;
+}
+
+.dropdown.show {
+    background-color: #070606;
+}
+
+.dropdown-item {
+    color: black;
+    font-style: italic;
+    font-weight: 800;
+    text-shadow:
+        0.02em 0 aliceblue,
+        0 0.02em aliceblue,
+        -0.02em 0 aliceblue,
+        0 -0.02em aliceblue;
+}
+
 .loginButtons {
     display: flex;
     margin-left: 5%;
@@ -517,6 +538,10 @@ li>img {
     width: 100%;
 }
 
+.card {
+    margin: 10px;
+}
+
 /* Footer */
 
 .rodapeDev {
@@ -532,6 +557,18 @@ li>img {
 .rodapeDev>p {
     margin: 0;
 }
+
+.btn:hover {
+    box-shadow: none;
+    background-color: inherit;
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.contatoIcon {
+    margin: 0 6px 0 0 !important;
+}
+
 
 
 @media screen and (max-width: 800px) {
@@ -597,6 +634,7 @@ li>img {
         width: 100%;
         background-image: url(../img/mobilebg/homemcomentregas.jpg);
         background-size: cover;
+        background-attachment: fixed;
         background-position: center center;
     }
 
@@ -656,7 +694,7 @@ li>img {
 
     .card {
         height: fit-content;
-        margin: 10% 0;
+        margin: 1%;
     }
 
     .card-deck {
@@ -720,7 +758,7 @@ li>img {
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
 
 
     #mainTitle {
@@ -767,6 +805,11 @@ li>img {
     .contatoFlexContainer {
         flex-direction: column;
         margin: 0 10%;
+    }
+
+    .card {
+        margin: 5% 0;
+        max-width: 300px;
     }
 
 }
