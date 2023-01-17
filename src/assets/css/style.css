@@ -235,6 +235,11 @@ img {
 		0 -0.03em black;
 }
 
+
+.col-md-4 {
+	padding: 30px 25px 0 25px;
+}
+
 .section-3-container {
 	background-color: #e69422;
 	margin-top: 8%;

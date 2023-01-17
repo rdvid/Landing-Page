@@ -23,11 +23,6 @@ jQuery(document).ready(function () {
 	});
 
 	/*
-		Background
-	*/
-	$('.section-4-container').backstretch("assets/img/backgrounds/bg.jpg");
-
-	/*
 		Wow
 	*/
 	new WOW().init();
@@ -37,10 +32,7 @@ jQuery(document).ready(function () {
 	*/
 	$('#carousel-example').on('slide.bs.carousel', function (e) {
 
-		/*
-			CC 2.0 License Iatek LLC 2018
-			Attribution required
-		*/
+
 		var $e = $(e.relatedTarget);
 		var idx = $e.index();
 		var itemsPerSlide = 5;

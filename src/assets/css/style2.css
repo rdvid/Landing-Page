@@ -59,12 +59,15 @@ li {
     width: 100vw;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid #F1F1F1;
-    box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.1);
+    border: 2px solid #000;
+    border-bottom: 1px black;
 }
 
 .navbar {
     padding: 0;
+    background-color: #e69422ec;
+    border-bottom: 1px black;
+    box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
 }
 
 .navButton {
@@ -86,21 +89,29 @@ li {
     display: flex;
     position: relative;
     flex: 1;
-    justify-content: end;
+    justify-content: space-between;
     margin: 0 3%;
 }
 
-.btn-outline-light>a {
-    text-shadow:
-        0.03em 0 black,
-        0 0.03em black,
-        -0.03em 0 black,
-        0 -0.03em black;
+.logoAndButtons {
+    display: flex;
+}
+
+
+.btn-link,
+.btn-link:active {
+    transition: none;
+    background-color: inherit;
+}
+
+.btn-link>a {
+    color: #000;
+    font-weight: 800;
 }
 
 #icon {
-    margin-right: 1%;
-    height: 60%;
+    margin-right: 8%;
+    height: 80%;
     align-self: center;
 }
 
@@ -121,14 +132,10 @@ li {
 }
 
 .dropdown-menu.show {
-    background-color: #070606;
     margin: 0;
     border: 0;
 }
 
-.dropdown.show {
-    background-color: #070606;
-}
 
 .dropdown-item {
     color: black;
@@ -171,14 +178,12 @@ li {
 #introSection {
     height: fit-content;
     width: 100vw;
-    background-image: url(../img/background/entrega\ na\ porta.jpg);
-    background-size: cover;
     z-index: 1;
 }
 
 #mainTitle {
     width: fit-content;
-    padding-top: 10%;
+    padding-top: 4%;
     text-shadow:
         0.1em 0 black,
         0 0.1em black,
@@ -222,12 +227,14 @@ li {
 
 .firstContainerContent {
     height: 100vh;
-    padding: 0 10%;
+    padding: 0 3%;
     color: #e69422;
     text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
     font-weight: bold;
     display: flex;
     flex-direction: row;
+    background-image: url(../img/background/entrega\ na\ porta.jpg);
+    background-size: cover;
 }
 
 
@@ -653,6 +660,7 @@ li>img {
         justify-content: center;
         text-align: center;
         align-items: center;
+        background-image: none;
     }
 
 
