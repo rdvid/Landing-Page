@@ -28,6 +28,15 @@ li {
     padding: 0;
 }
 
+.btn-primary {
+    background-color: #e69422;
+    border: 0.5px solid black;
+    color: black;
+    font-style: italic;
+    font-weight: 800;
+
+}
+
 /* WhatsApp Button */
 
 .whatsApp {
@@ -189,11 +198,12 @@ li {
     width: fit-content;
     padding-top: 4%;
     text-shadow:
-        0.1em 0 black,
-        0 0.1em black,
-        -0.1em 0 black,
-        0 -0.1em black;
+        0.09em 0 black,
+        0 0.09em black,
+        -0.09em 0 black,
+        0 -0.09em black;
 }
+
 
 
 .zeroDozeTitulo {
@@ -244,11 +254,12 @@ li {
 
 .subtitle {
     font-size: 1.8rem;
+    color: aliceblue;
     text-shadow:
-        0.03em 0 black,
-        0 0.03em black,
-        -0.03em 0 black,
-        0 -0.03em black;
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black;
 
 }
 
@@ -587,7 +598,7 @@ li>img {
     /* Mobile Header */
 
     #mainTitle {
-        margin-top: 15%;
+        margin: 10% 0;
     }
 
     #icon,
@@ -602,6 +613,11 @@ li>img {
         justify-content: center;
     }
 
+    .navbar {
+
+        border-bottom: 2px solid black;
+    }
+
     .dropdown {
         display: flex;
         width: 100%;
@@ -611,6 +627,19 @@ li>img {
 
     .dropdown-menu {
         width: 100vw !important;
+    }
+
+    .dropdown-menu.show {
+        padding: 0;
+    }
+
+    .dropdown-menu.show>:first-child {
+        border: none;
+    }
+
+    .dropdown-item {
+        padding: 2%;
+        border-top: 1.5px solid #e69422;
     }
 
     #dropdownMenuButton {
@@ -669,7 +698,6 @@ li>img {
 
 
     .pickngo {
-        padding-right: 10%;
         font-size: 1.2rem;
     }
 
@@ -770,20 +798,19 @@ li>img {
 
 
     #mainTitle {
-        padding-top: 40%;
+        padding-top: 25%;
     }
 
     .zeroDozeTitulo {
         font-weight: 600;
-        font-size: 3rem;
+        font-size: 3.5rem;
         margin: 0;
-        line-height: 2.5rem;
+        line-height: 2rem;
         font-family: Arial, Helvetica, sans-serif;
     }
 
     .pickngo {
-        padding-right: 20%;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         text-align: right;
         color: aliceblue;
         font-style: italic;
@@ -796,7 +823,7 @@ li>img {
     }
 
     .licenciado {
-        font-size: 1rem;
+        font-size: 1.4rem;
         font-style: italic;
         color: aliceblue;
         text-shadow:
@@ -807,17 +834,17 @@ li>img {
     }
 
     .subtitle {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .contatoFlexContainer {
         flex-direction: column;
-        margin: auto;
+        align-items: center;
     }
 
     .card {
         margin: 5% 0;
-        max-width: 300px;
+        max-width: 80%;
     }
 
 }
